@@ -1,4 +1,4 @@
-#Instruçoes de instalação
+# Instruçoes de instalação
 
 Baixe os arquivos e execute em seu navegador o index.html.
 

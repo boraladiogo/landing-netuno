@@ -1,0 +1,29 @@
+@use '../utils' as *;
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--blue-700);
+    color: var(--light);
+}
+
+body, input, textarea, select, button {
+    font-family: $font;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+fieldset {
+    margin: 0;
+    border: none;
+}

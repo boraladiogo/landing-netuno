@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/styles.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <title>Netuno - Gerando Diamantes</title>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="wrapper">
+            <header class="topnav">
+
+                <img src="app/assets/netuno-logo.svg" alt="Logo Netuno" />
+                <nav>
+                    <span id="nav-label" hidden>Navigation</span>
+                    <button id="buttonOpen" class="topnav--open" aria-expanded="false" aria-labelledby="nav-label">
+                        MENU
+                    </button>
+                    <div class="topnav--menu" role="dialog" aria-labelledby="nav-label">
+                        <button id="buttonClose" class="topnav--close" aria-label="Close">FECHAR</button>
+                        <ul class="topnav--links">
+                            <li class="topnav--item"><a href="#" class="topnav--link">O Projeto</a></li>
+                            <li class="topnav--item"><a href="#" class="topnav--link">O Problema</a></li>
+                            <li class="topnav--item"><a href="#" class="topnav--link">Sua Jornada</a></li>
+                            <li class="topnav--item"><a href="#" class="topnav--link">Objetivos</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <button class="cta">Processo Seletivo</button>
+            </header>
+        </div>
+
+        <main class="grid--main">
+            <div class="wrapper">
+                <img src="app/assets/couple-smiling.svg" alt="Duas pessoas sorrindo" />
+                <div class="grid--form">
+                    <form>
+                        <fieldset>
+                            <div class="user-data">
+                                <h1>Formulario de Cadastro</h1>
+                                <p>Preencha seus dados</p>
+
+                                <label for="fullname">
+                                    <!-- Nome completo<span>*</span> -->
+                                    <img src="app/assets/user-icon.svg" alt="">
+                                    <input type="text" name="fullname" id="fullname" placeholder="Nome completo"
+                                        required />
+                                </label>
+
+                                <label for="email">
+                                    <!-- E-mail<span>*</span> -->
+                                    <img src="app/assets/mail-icon.svg" alt="">
+                                    <input type="email" name="email" id="email" placeholder="E-mail" required />
+                                </label>
+
+                                <!-- <label for="state">
+                                    Estado<span>*</span>
+                                    <input type="checkbox" name="state" id="state">
+                                </label> -->
+
+                                <label for="state">
+                                    <!-- Estado<span>*</span> -->
+                                    <img src="app/assets/fed-icon.svg" alt="">
+                                    <select name="state" id="state">
+                                        <option value="a">A</option>
+                                        <option value="b">B</option>
+                                        <option value="c">C</option>
+                                        <option value="d">D</option>
+                                    </select>
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="user-skills">
+
+                                <p>Conhecimento de programação*</p>
+                                <label for="html">
+                                    <input type="checkbox" name="html" id="html">
+                                    HTML
+                                </label>
+
+                                <label for="css">
+                                    <input type="checkbox" name="css" id="css">
+                                    CSS
+                                </label>
+
+                                <label for="javascript">
+                                    <input type="checkbox" name="javascript" id="javascript">
+                                    JavaScript
+                                </label>
+
+                                <label for="php">
+                                    <input type="checkbox" name="php" id="php">
+                                    PHP
+                                </label>
+
+                                <label for="dotnet">
+                                    <input type="checkbox" name="dotnet" id="dotnet">
+                                    .NET
+                                </label>
+
+                                <label for="vuejs">
+                                    <input type="checkbox" name="vuejs" id="vuejs">
+                                    VueJS
+                                </label>
+
+                                <label for="reactjs">
+                                    <input type="checkbox" name="reactjs" id="reactjs">
+                                    ReactJS
+                                </label>
+
+                                <label for="react-native">
+                                    <input type="checkbox" name="react-native" id="react-native">
+                                    React Native
+                                </label>
+
+                                <label for="node">
+                                    <input type="checkbox" name="node" id="node">
+                                    Node
+                                </label>
+
+                                <label for="python">
+                                    <input type="checkbox" name="python" id="python">
+                                    Python
+                                </label>
+
+                                <label for="flutter">
+                                    <input type="checkbox" name="flutter" id="flutter">
+                                    Flutter
+                                </label>
+
+                                <label for="others">
+                                    <input type="checkbox" name="others" id="others">
+                                    Outros
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="user-experience">
+                                <p>Já trabalhou com desenvolvimento?</p>
+
+                                <label for="no">
+                                    <input type="radio" name="hasExperience" id="no" value="no" checked>
+                                    Não
+                                </label>
+
+                                <label for="yes">
+                                    <input type="radio" name="hasExperience" id="yes" value="yes">
+                                    Sim
+                                </label>
+                            </div>
+                        </fieldset>
+                        <div class="disclaimer">
+                            <p class="legend">(*) Campos obrigatórios</p>
+                            <button>Enviar</button>
+                            <p class="agreement">Ao clicar em enviar, você concorda com todos os termos de uso de dados
+                                descritos em <span>política de privacidade.</span></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <section class="grid--project wrapper">
+                <div class="wrapper">
+                    <img src="app/assets/coding-windows.svg" alt="Duas pessoas sorrindo" />
+                    <div>
+                        <h1>O Projeto</h1>
+                        <p>
+                            Com o “novo normal” causado pela pandemia dos últimos anos, mais empresas no mundo todo têm
+                            aberto
+                            oportunidades no modelo Home Office.
+
+                            <br>
+
+                            Alinhado a depreciação da moeda local, temos um alto índice de profissionais migrando para
+                            trabalhos
+                            em outros países.
+                        </p>
+                        <p>
+                            O projeto Netuno, idealizado pela Fasters, tem por objetivo reduzir os estresses causados
+                            por
+                            recrutamento e turn over na área de tecnologia, bem como gerar oportunidades de carreira
+                            para
+                            novos
+                            profissionais.
+                        </p>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="grid--issue wrapper">
+                <div class="wrapper">
+
+                    <div class="is-desktop">
+                        <img src="app/assets/senior-woman.svg" alt="Duas pessoas sorrindo" />
+
+                        <div>
+
+                            <h1>O Problema</h1>
+                            <p>
+                                Falta de profissionais de TI no Mercado brasileiro: um problema que demanda atenção urgente.
+                            </p>
+                            <hr>
+                            <p>
+                                Estima-se que atualmente tenhamos um déficit de 408 mil postos de trabalho, com perdas se
+                                acumulando
+                                na casa dos R$167 bilhões, de acordo com a Softex, uma organização social voltada ao fomento
+                                da
+                                área
+                                de TI.
+                            </p>
+                            <p>
+                                Um dos principais fatores dessa falta de profissionais é o êxodo de profissionais para o
+                                exterior.
+                            </p>
+                        </div>
+                    </div>
+
+                    <ul>
+                        <li>
+                            <div>
+                                <h2>Oportunidade</h2>
+                                <span>1</span>
+                            </div>
+                            Acreditamos que a combinação de interesse, dedicação e oportunidade pode causar um grande
+                            impacto nas pessoas, nas organizações e no mundo.
+                        </li>
+                        <li>
+                            <div>
+                                <h2>Comunidade</h2>
+                                <span>2</span>
+                            </div>
+                            Dentro de um grupo de pessoas mais experientes e acessíveis, a curva de aprendizado ocorre
+                            de
+                            forma mais rápida, fluída e eficiente.
+                        </li>
+                        <li>
+                            <div>
+                                <h2>Experiência Real</h2>
+                                <span>3</span>
+                            </div>
+                            Entendemos que somente as experiências reais poderão trazer a bagagem que a teoria não o
+                            pode
+                            fazer.
+                        </li>
+                    </ul>
+                </div>
+
+            </section>
+
+            <section class="grid--journey">
+                <div class="wrapper">
+                    <h1>Sua Jornada</h1>
+                    <ul class="widgets">
+                        <li>
+                            <img src="/app/assets/calendar-icon.svg" alt="">
+                            Programas de 4 meses de duração, sendo 6 horas/dia.
+                        </li>
+                        <li>
+                            <img src="/app/assets/award-icon.svg" alt="">
+                            Do Zero ao Junior Promissor em 4 meses.
+                        </li>
+                        <li>
+                            <img src="/app/assets/clock-icon.svg" alt="">
+                            640 horas de aplicação prática dos conceitos.
+                        </li>
+                        <li>
+                            <img src="/app/assets/home-icon.svg" alt="">
+                            Mentoria individual e coletiva em padrão ágil.
+                        </li>
+                        <li>
+                            <img src="/app/assets/colab-icon.svg" alt="">
+                            100% Home Office com plataformas de cursos online.
+                        </li>
+                        <li>
+                            <img src="/app/assets/goal-icon.svg" alt="">
+                            Variedade de áreas dentro da tecnologia.
+                        </li>
+                    </ul>
+                    <button>
+                        <p>Quero me cadastrar para o <span>Processo Seletivo</span></p>
+                        <img src="app/assets/right-arrow.svg" alt="">
+                    </button>
+                    <img src="app/assets/wiggle-line.svg" alt="" class="wiggle-line">
+                </div>
+            </section>
+
+            <section class="grid--goals wrapper">
+                <h1>Objetivos</h1>
+                <ul>
+                    <li>
+                        <div>
+                            <h2>Otimizar</h2>
+                        </div>
+                        Otimizar todo processo de contratação chegando a contribuir com uma economia de 40% no
+                        processo
+                        de recrutamento.
+                    </li>
+                    <li>
+                        <div>
+                            <h2>Gerar</h2>
+                        </div>
+                        Gerar novas oportunidades de carreira para pessoas interessadas em ingressar na área ou
+                        migrar
+                        de outras áreas que esteja descontente.
+                    </li>
+                    <li>
+                        <div>
+                            <h2>Filtrar</h2>
+                        </div>
+                        Criar oportunidades brilhantes para profissionais que se destacarem junto a parceiros
+                        estratégicos de negócios.
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <div class="left-side">
+                <span>
+                    <img src="app/assets/netuno-logo.svg" alt="">
+                    <p class="slogan">Gerando Diamantes</p>
+                </span>
+                <div class="socials">
+                    <a href="#" alt=""><img src="app/assets/insta-icon.svg" alt=""></a>
+                    <a href="#" alt=""><img src="app/assets/linkedin-icon.svg" alt=""></a>
+                    <a href="#" alt=""><img src="app/assets/facebook-icon.svg" alt=""></a>
+                </div>
+                <p>Netuno 2024<br>Todos os direito reservados</p>
+            </div>
+            <div class="right-side">
+                <div class="flex">
+                    <button class="as-start">Processo Seletivo</button>
+                    <ul>
+                        <li>O Projeto</li>
+                        <li>O Problema</li>
+                        <li>Sua Jornada</li>
+                        <li>Objetivos</li>
+                    </ul>
+                </div>
+                <div>
+                    <p>
+                        <span>Contato</span>
+                        <span>11 91234.5678</span>
+                        <span>contato@netuno.com.br</span>
+                    </p>
+                </div>
+            </div>
+            <p class="author">Diogo Martins</p>
+        </footer>
+    </div>
+</body>
+
+</html>
